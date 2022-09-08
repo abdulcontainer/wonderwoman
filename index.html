@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="assets/imgs/title.png" rel="icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header" id="home">
+      <div class="brand-title">
+        <a href="#"><img src="/assets/imgs/logo.svg" alt="logo"></a>
+      </div>
+      <a href="#" class="toggle-button">
+        <i class="bi bi-list"></i>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#travel">Trip Planners</a>
+          </li>
+          <li>
+            <a href="#galltrip">Blogs</a>
+          </li>
+          <li>
+            <a href="#stories">Stories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">01 / 04</div>
+        <img src="/assets/imgs/banner.jpg" style="width:100%">
+        <div class="text">Just Living is not Enough,<br> one must have sunshine</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">02 / 04</div>
+        <img src="/assets/imgs/bunaken.jpg" style="width:100%">
+        <div class="text">Just Living is not Enough,<br> one must have sunshine</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">03 / 04</div>
+        <img src="/assets/imgs/banner.jpg" style="width:100%">
+        <div class="text">Just Living is not Enough,<br> one must have sunshine</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">04 / 04</div>
+        <img src="/assets/imgs/bunaken.jpg" style="width:100%">
+        <div class="text">Just Living is not Enough,<br> one must have sunshine</div>
+      </div>
+
+    </div>
+    <div class="dots-box">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+
+  <div class="filter-section">
+    <div class="container">
+      <div class="filter">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="heading">
+              Destination
+            </div>
+            <div class="des">
+              <span>All Destination</span><i class="bi bi-chevron-down"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="heading">
+              Travelers
+            </div>
+            <div class="des">
+              <input type="text" placeholder="Number of Travelers">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="heading">
+              Destination
+            </div>
+            <div class="check-in">
+              <span>Check In</span><i class="bi bi-calendar4"></i>
+              <span>Check Out</span><i class="bi bi-calendar4"></i>
+            </div>
+          </div>
+          <div class="col-md-3 fillter-btn">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="travel" id="travel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="travel-title">
+            <h6>#TRAVELTIP</h6>
+          </div>
+          <div>
+            <h1>How to explore bunaken in 2 days?</h1>
+          </div>
+          <div class="title-description">
+            <p class="1st-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, qui odit rem sapiente vitae totam dicta
+              aliquid excepturi voluptates reprehenderit dolorum nemo placeat itaque omnis debitis ipsa! Ipsam, dolorum
+              reiciendis molestias aut fugit quibusdam ex? Quae, suscipit. Quisquam sunt accusamus et numquam. Dolor id
+              deserunt quod recusandae voluptatum sint cum voluptatibus? Magni perspiciatis maxime laboriosam nulla sunt
+              eligendi aliquid. Ad!
+            </p>
+            <p class="2nd-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel et asperiores voluptate cumque minus ducimus
+              harum quasi debitis eos sapiente.
+            </p>
+          </div>
+          <div class="travel-btn">
+            <button class="btn btn-primary">READ MORE</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="travel-bkg">
+            <img src="/assets/imgs/explore.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="gallery" id="galltrip">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card1">
+            <img src="/assets/imgs/garden.jpg" alt="gal1">
+            <div class="text">Centered</div>
+            <button class="btn btn-primary gall-btn">READ MORE</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card1">
+            <img src="/assets/imgs/waterfall.jpg" alt="gal1">
+            <div class="text">Waterfall</div>
+            <button class="btn btn-primary gall-btn">READ MORE</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card1">
+            <img src="/assets/imgs/mountain.jpg" alt="gal1">
+            <div class="text">Mountain</div>
+            <button class="btn btn-primary gall-btn">READ MORE</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card1">
+            <img src="/assets/imgs/beach.jpg" alt="gal1">
+            <div class="text">Beach</div>
+            <button class="btn btn-primary gall-btn">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trip" id="stories">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Enjoy an Exciting <br> your trip</h1>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary right">VIEW ALL</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="myscroll">
+      <div class="images">
+        <img src="/assets/imgs/bali.jpg" alt="">
+        <img src="/assets/imgs/banner.jpg" alt="">
+        <img src="/assets/imgs/bunaken.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="story">
+    <div class="container">
+      <div class="title">
+        <h1>Share your story</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nisi ad sunt doloribus earum aliquid,
+          placeat harum laudantium enim, magni odio eveniet aliquam iure distinctio facere iusto repudiandae velit
+          quos.</p>
+      </div>
+      <div class="map">
+        <div class="map-data">
+          <div class="small-cards-1">
+            <img class="img1" src="/assets/imgs/user-1.png" alt="">
+          </div>
+          <div class="small-cards-2">
+            <img class="img2" src="/assets/imgs/user-2.png" alt="">
+          </div>
+          <div class="small-cards-3">
+            <img class="img3" src="/assets/imgs/user-2.png" alt="">
+          </div>
+          <div class="small-cards-4">
+            <img class="img4" src="/assets/imgs/user-1.png" alt="">
+          </div>
+          <div class="small-cards-5">
+            <img class="img5" src="/assets/imgs/user-2.png" alt="">
+          </div>
+          <div class="small-cards-6">
+            <img class="img6" src="/assets/imgs/user-2.png" alt="">
+          </div>
+          <div class="small-cards-7">
+            <img class="img7" src="/assets/imgs/user-1.png" alt="">
+          </div>
+          <div class="small-cards-8">
+            <img class="img8" src="/assets/imgs/user-1.png" alt="">
+          </div>
+          <div class="small-cards-9">
+            <img class="img9" src="/assets/imgs/user-1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="final">
+    <div class="container">
+      <div class="final-data">
+        <div class="row">
+          <div class="col-md-5">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="slide-text">
+                    <h1>What the final word</h1>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide-text">
+                    <h1>What the final word</h1>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide-text">
+                    <h1>What the final word</h1>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide-text">
+                    <h1>What the final word</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="dots-box">
+                <span class="dot" data-slide="next"></span>
+                <span class="dot" data-slide="next"></span>
+                <span class="dot" data-slide="next"></span>
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="/assets/imgs/testimonial.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima dolor inventore
+                voluptate sunt.
+                Cupiditate, nobis. Excepturi ipsa mollitia placeat, dolor nulla modi incidunt eius quia amet,
+                perspiciatis aspernatur.
+              </p>
+              <h4>Emil Jhonson</h4>
+              <p class="second">Visitor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="copyright">
+            Copyright Dummy 2022
+          </p>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-menu">
+            <li class="list-inline-item">
+              <a href="#home">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#travel">Trip Planners</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#galltrip">Blogs</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#stories">Stories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
